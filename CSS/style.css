@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(-225deg, #FF057C 0%, #8D0B93 50%, #321575 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    min-height: 50%;
+    width: 50%;
+    background-color: rgba(0,0,0,0.15);
+    border-radius: 10px;
+    box-shadow: 7px 7px 15px hotpink;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 10px;
+}
+.container h1{
+    color: snow;
+    font-family: Agbalumo;
+    font-size: 2rem;
+}
+
+.container form {
+    display: flex;
+    margin: 30px;
+    width: 80%;
+}
+
+.container form input {
+    padding: 12px;
+    width: 100%;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    margin-right: 5px;
+}
+
+.container form button {
+    border-radius: 3px;
+    background-color: pink;
+    padding: 0px 18px;
+    border: none;
+    outline: none;
+}
+
+.task {
+    width: 90%;
+    border: 1px solid snow;
+    border-radius: 5px;
+    height: auto;
+    padding: 5px;
+    min-height: 40px;
+}
+
+.task .screen {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.task .btn {
+    display: flex;
+}
+
+.task .screen p {
+    font-size: 18px;
+    width: auto;
+    color: snow;
+}
+
+.task button {
+    padding: 13px;
+    border-radius: 4px;
+    text-align: center;
+    background-color: pink;
+    border: none;
+    outline: none;
+    width: 70px;
+    margin: 2px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: hotpink;
+    font-weight: bold;
+    color: snow;
+
+}
+
+@media screen and (max-width: 900px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .task {
+        width: 100%;
+    }
+
+
+}
+
+@media screen and (max-width: 480px) {
+    .task .btn {
+        flex-direction: column;
+    }
+    .container h1{
+        color: snow;
+        font-family: Agbalumo;
+        font-size: 1.5rem;
+    }
+}
